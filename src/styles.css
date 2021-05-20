@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "Mononoki";
+    src: local("Mononoki"), url(./assets/mononoki-Regular.ttf) format("truetype");
+}
+
 body {
     background-color: #212529;
     color: white;
+    font-family: "Mononoki";
 
     display: flex;
     justify-content: center;
