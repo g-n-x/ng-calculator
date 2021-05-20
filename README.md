@@ -1,6 +1,6 @@
 # ng-calculator
 
-calgulator in angular
+calculator in angular
 
 # demo
 ![Alt Text](src/assets/demo.gif)
