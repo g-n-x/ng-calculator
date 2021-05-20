@@ -3,4 +3,4 @@
 calgulator in angular
 
 # demo
-![Alt Text](src/app/assets/demo.gif)
+![Alt Text](src/assets/demo.gif)
