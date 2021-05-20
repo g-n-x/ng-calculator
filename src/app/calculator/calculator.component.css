@@ -2,6 +2,12 @@ h1 {
     text-align: center;
 }
 
+.calculator {
+    border: 1px solid white;
+    padding: 51px 30px 51px 30px;
+    margin-top: 30px;
+}
+
 .number-row {
     display: flex;
     justify-content: space-between;
