@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
+  public problem = "";
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  btnClick(value: any) {
+    this.problem += value;
+  }
+
+  calculate() {
+    let result = eval(this.problem);
+    if(result != undefined) {
+      this.problem = result;
+    } else {
+      this.problem = "Error";
+    }
+  }
+
+  clear() {
+    this.problem = "";
   }
 
 }

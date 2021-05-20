@@ -1,29 +1,33 @@
 <div style="border: 1px solid white; padding: 51px 30px 51px 30px; margin-top: 30px;">
     <h1>NgCalculator</h1>
-    <input type="text">
+    <input type="text" value="{{ problem }}">
     <div class="number-row">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button #b1 (click)="btnClick(b1.textContent)">1</button>
+        <button #b2 (click)="btnClick(b2.textContent)">2</button>
+        <button #b3 (click)="btnClick(b3.textContent)">3</button>
     </div>
     <div class="number-row">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        <button #b4 (click)="btnClick(b4.textContent)">4</button>
+        <button #b5 (click)="btnClick(b5.textContent)">5</button>
+        <button #b6 (click)="btnClick(b6.textContent)">6</button>
     </div>
     <div class="number-row">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
+        <button #b7 (click)="btnClick(b7.textContent)">7</button>
+        <button #b8 (click)="btnClick(b8.textContent)">8</button>
+        <button #b9 (click)="btnClick(b9.textContent)">9</button>
     </div>
     <div class="number-row">
-        <button>0</button>
-        <button>+</button>
-        <button>-</button>
+        <button #b0 (click)="btnClick(b0.textContent)">0</button>
+        <button #bp (click)="btnClick(bp.textContent)">+</button>
+        <button #bm (click)="btnClick(bm.textContent)">-</button>
     </div>
     <div class="number-row">
-        <button>*</button>
-        <button>/</button>
-        <button>=</button>
+        <button #bt (click)="btnClick(bt.textContent)">*</button>
+        <button #bd (click)="btnClick(bd.textContent)">/</button>
+        <button #bdot (click)="btnClick(bdot.textContent)">.</button>
+    </div>
+    <div class="number-row">
+        <button (click)="calculate()">=</button>
+        <button (click)="clear()">Clear</button>
     </div>
 </div>
