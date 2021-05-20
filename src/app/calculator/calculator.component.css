@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+.number-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    margin: 5px;
+    font-size: 24px;
+
+    background-color: #212529;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color:#46484d;
+}
+
+input[type=text] {
+    background-color: #212529;
+    color: white;
+    border: 2px solid white;
+    font-size: 18px;
+    padding: 2px;
+    margin: 5px 0 20px 0;
+    outline: none;
+}
